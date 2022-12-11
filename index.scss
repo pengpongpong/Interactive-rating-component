@@ -19,6 +19,8 @@ $overpass: "Overpass", sans-serif;
 $big_screen: 600px;
 
 body {
+    width: 100vw;
+    height: 100vh;
     background-color: $dark_blue2;
     display: grid;
     place-items: center;
@@ -27,7 +29,6 @@ body {
 
 .rating_window, .rating_final {
     width: 85vw;
-    margin: 3rem auto;
     background-color: $dark_blue;
     padding: 1.5rem;
     border-radius: 20px;

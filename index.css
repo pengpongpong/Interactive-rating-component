@@ -6,6 +6,8 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   background-color: hsl(216deg, 12%, 8%);
   display: grid;
   place-items: center;
@@ -14,7 +16,6 @@ body {
 
 .rating_window, .rating_final {
   width: 85vw;
-  margin: 3rem auto;
   background-color: hsl(213deg, 19%, 18%);
   padding: 1.5rem;
   border-radius: 20px;
