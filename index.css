@@ -54,37 +54,39 @@ body {
   color: hsl(216deg, 12%, 54%);
 }
 
-.rating {
+.rating_form {
+  width: 100%;
   margin: 2rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
-.rating span {
+.rating_form fieldset {
+  display: flex;
+  justify-content: space-between;
+  border: 0px;
+}
+.rating_form input {
+  display: none;
+}
+.rating_form input:checked + label {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(217deg, 12%, 63%);
+}
+.rating_form label {
   display: grid;
   place-items: center;
   width: 45px;
   height: 45px;
   border-radius: 50%;
-}
-
-.rating_num {
   background-color: hsl(213deg, 19%, 25%);
   color: hsl(217deg, 12%, 63%);
 }
-.rating_num:hover {
+.rating_form label:hover {
   background-color: hsl(25deg, 97%, 53%);
   color: hsl(0deg, 0%, 100%);
   cursor: pointer;
-}
-
-.active_rating {
-  color: white;
-  background-color: hsl(217deg, 12%, 63%);
 }
 
 .submit {
