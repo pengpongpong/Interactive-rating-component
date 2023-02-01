@@ -21,3 +21,5 @@ for (let rating of ratings) {
 };
 
 submit_button.addEventListener("click", submit_page);
+
+// or use FormData()
